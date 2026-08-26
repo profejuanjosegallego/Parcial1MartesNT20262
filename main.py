@@ -1,0 +1,1 @@
+from funciones import registrar_hogares, validar_hogar, calcular_puntaje, clasificar_prioridad, registrar_entregas, generar_resumen
