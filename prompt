@@ -1,0 +1,11 @@
+Asume el rol de experto en python, soy estudiante de programación y estoy aprendiendo python,
+necesito crear 6 funciones para registrar la información por situaciones económicas temporales
+donde se necesita una solución básica que permita organizar las solicitudes, 
+estimar la prioridad de atención y controlar la entrega de paquetes,
+solo me interesa funciones, ciclos, condicionales, listas, diccionarios, variables y operaciones básicas, 
+las variables deben estar en español usando snake_case, guiate del diseño y ten en cuenta estás condiciones del punto 2 válida que los integrantes que sean mayor que 0, 
+que menores y adultos mayores no sean negativos,
+que la suma de menores y adultos mayores no supere la cantidad de integrantes y que el ingresos mensual no sea negativo, ten en cuenta las validación de la. 
+Función 3 calcular puntaje de vulnerabilidad: +2 puntos si el ingreso es menor de $1.000.000; +1 si está entre $1.000.000 y $2.000.000; +1 por cada menor (máximo 3 puntos);
++2 si existe al menos un adulto mayor; +1 si el hogar tiene 5 o más integrantes
+y por último de la función 4 Clasificar el puntaje: 0–2 = Baja, 3–4 = Media, 5–6 = Alta, 7 o más 
