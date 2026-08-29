@@ -1,0 +1,92 @@
+========================================================================
+VALIDACIÓN DE RESTRICCIONES TÉCNICAS - VERSIÓN FINAL
+ACDA 1: Sistema de Priorización de Entregas
+========================================================================
+
+RESTRICCIÓN 1: "No utilizar clases"
+✓ CUMPLIDO
+  - No hay ninguna declaración de clase (class) en el código
+  - Toda la funcionalidad se construye solo con funciones
+
+RESTRICCIÓN 2: "No utilizar archivos, bases de datos"
+✓ CUMPLIDO
+  - No se leen ni escriben archivos (.txt, .json, .csv, etc.)
+  - No se conecta a ninguna base de datos (SQL, NoSQL, etc.)
+  - Los datos solo se almacenan en memoria (listas y diccionarios)
+
+RESTRICCIÓN 3: "No utilizar librerías externas"
+✓ CUMPLIDO
+  - Solo se usa Python puro (built-in)
+  - No hay importaciones de librerías externas (pandas, numpy, sqlite, etc.)
+  - La única importación es "from funciones import..." que es un módulo propio
+
+RESTRICCIÓN 4: "No utilizar comprensión de listas"
+✓ CUMPLIDO
+  - No se usa sintaxis de list comprehension: [x for x in lista]
+  - No se usa sintaxis de dict comprehension: {k: v for k, v in ...}
+  - Se usan ciclos for tradicionales para recorrer listas
+
+RESTRICCIÓN 5: "No utilizar funciones avanzadas"
+✓ CUMPLIDO
+  - No se usa map(), filter(), lambda
+  - No se usa recursión (se usan ciclos iterativos)
+  - No se usa decoradores
+  - No se usa generators o yield
+  - No se usa context managers (with)
+  - NO se usa while True (solo for loops)
+  - NO se usa try/except (validación simple con if/elif)
+
+========================================================================
+ELEMENTOS BÁSICOS UTILIZADOS
+========================================================================
+
+✓ FUNCIONES (7 funciones: 6 obligatorias + 1 helper)
+  1. solicitar_cantidad_hogares()    [Helper]
+  2. registrar_hogares()             [Obligatoria 1]
+  3. validar_hogar(hogar)            [Obligatoria 2]
+  4. calcular_puntaje(hogar)         [Obligatoria 3]
+  5. clasificar_prioridad(puntaje)   [Obligatoria 4]
+  6. registrar_entregas(hogares)     [Obligatoria 5]
+  7. generar_resumen(hogares)        [Obligatoria 6]
+  + main() en el archivo principal
+
+✓ CICLOS (SOLO FOR)
+  - for i in range(cantidad_hogares): Recorrer N veces
+  - for i in range(len(hogares)): Recorrer lista con índice
+  - for hogar in hogares: Recorrer lista directamente
+  - NO hay while loops
+
+✓ CONDICIONALES
+  - if ... elif ... else: Toma de decisiones
+  - Expresiones booleanas: (a > 0), (a >= 0), (a == 's')
+  - NO hay try/except
+  - NO hay while True
+
+✓ LISTAS
+  - hogares = [] : Lista vacía
+  - hogares.append(hogar) : Agregar elemento
+  - len(hogares) : Obtener tamaño
+  - hogares[i] : Acceder por índice
+  - for hogar in hogares : Iterar
+
+✓ DICCIONARIOS
+  - hogar = { "clave": valor, ... } : Crear diccionario
+  - hogar["clave"] : Acceder a valores
+  - hogar["clave"] = valor : Modificar valores
+
+✓ VARIABLES Y OPERACIONES BÁSICAS
+  - Variables: documento, responsable, barrio, integrantes, etc.
+  - Operaciones: suma (+), comparación (>, <, >=, <=, ==)
+  - Conversión de tipos: int(), input(), .strip()
+
+========================================================================
+CONCLUSIÓN
+========================================================================
+
+✓ El código CUMPLE COMPLETAMENTE con todas las restricciones
+✓ Se utilizan SOLO funciones, ciclos FOR, condicionales, listas y diccionarios
+✓ NO hay while True
+✓ NO hay try/except
+✓ NO hay funciones avanzadas
+
+LISTO PARA ENTREGAR ✓
